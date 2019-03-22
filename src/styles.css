@@ -1,0 +1,181 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import './assets/css/animate.css'; */
+body {
+    background-color: #bfbfbf;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTCom-Lt';
+    src: local("HelveticaNeueLTCom-Lt"), url('./assets/fonts/HelveticaNeueLTCom-Lt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTCom-MdEx';
+    src: local("HelveticaNeueLTCom-MdEx"), url('./assets/fonts/HelveticaNeueLTCom-MdEx.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Ex';
+    src: local("HelveticaNeueLTStd-Ex"), url('./assets/fonts/HelveticaNeueLTStd-Ex.otf') format('truetype');
+}
+
+.description {
+    font-family: HelveticaNeueLTCom-Lt;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.img {
+    width: 228px;
+    height: 320px;
+    margin-top: 16px;
+    position: fixed;
+}
+
+.menu-top {
+    text-align: right;
+    margin-top: 52px;
+    margin-right: 25%
+}
+
+.menu {
+    font-family: HelveticaNeueLTCom-MdEx;
+    font-size: 8px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    position: fixed;
+    text-align: center;
+    word-wrap: break-word;
+    width: auto;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 376px) {
+    .menu-1 {
+        font-family: HelveticaNeueLTCom-MdEx;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        position: fixed;
+        text-align: center;
+        word-wrap: break-word;
+        width: auto;
+        cursor: pointer;
+    }
+    .description-1 {
+        font-family: HelveticaNeueLTCom-Lt;
+        font-size: 50px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.12;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-left: 20%;
+        margin-right: 20%;
+        position: absolute;
+        top: 632px;
+    }
+    .img-1 {
+        width: 440px;
+        height: 618px;
+        margin-top: 109px;
+        font-size: 12px;
+        position: fixed;
+        left: 38%;
+    }
+    .menu-top-1 {
+        text-align: right;
+        margin-top: 109px;
+        margin-right: 10%;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
