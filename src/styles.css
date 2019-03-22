@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* @import './assets/css/animate.css'; */
+
 body {
     background-color: #bfbfbf;
 }
@@ -31,14 +32,17 @@ body {
     color: #ffffff;
     margin-top: 50px;
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 18%;
+    position: absolute;
+    top: 443px;
 }
 
 .img {
-    width: 228px;
+    width: 243px;
     height: 320px;
     margin-top: 16px;
     position: fixed;
+    left: 17%;
 }
 
 .menu-top {
@@ -116,7 +120,7 @@ body {
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
+}
 
 @-webkit-keyframes fadeInDown {
     from {
