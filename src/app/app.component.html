@@ -1,22 +1,80 @@
-<div class="menu-top menu-top-1">
-  <label class="menu menu-1">MENU</label>
+<div class="menu-top">
+  <label class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'">MENU</label>
+  <label class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</label>
 </div>
-<div style="text-align:center; margin-top: 107px;">
-  <!-- <img alt="Logo" class="img img-1 animated bounceInDown fadeInDown" src="assets/image/photo.jpg"> -->
-  <img alt="Logo" class="img img-1 animated fadeInDown" src="assets/image/photo.jpg">
-</div>
-<div class="description description-1 animated fadeInUp">
-  My name is Diego and I am a multidisciplinary artist, graphic designer and illustrator based in Madrid, Spain.
-  <br>
-  <br>
-  I’ve been doing work for high profile clients and top brands around the world with my personal signature ‘Paranoidme’
-  since 2009.
-  <br>
-  <br>
-  Heavily influenced by cinema, art nouveau and a mixture of ancient and contemporary cultures, my work is imaginative
-  and detailed, featuring unique color palettes, forms and sometimes (why not), abstraction.
-  <br>
-  <br>
-</div>
+<ng-template [ngIf]="menuSelected[0] && state == 'menu'">
+  <div class="description animatedX3 fadeInUp">
+    Work section
+  </div>
+</ng-template>
+<ng-template [ngIf]="menuSelected[1] && state == 'menu'">
+  <div style="text-align:center; margin-top: 32px;">
+    <img alt="Logo" class="img animatedX3 fadeInDown" src="assets/image/photo.jpg">
+  </div>
+  <div class="description animatedX3 fadeInUp">
+    My name is Diego and I am a multidisciplinary artist, graphic designer and illustrator based in Madrid, Spain.
+    <br>
+    <br>
+    I’ve been doing work for high profile clients and top brands around the world with my personal signature
+    ‘Paranoidme’
+    since 2009.
+    <br>
+    <br>
+    Heavily influenced by cinema, art nouveau and a mixture of ancient and contemporary cultures, my work is
+    imaginative
+    and detailed, featuring unique color palettes, forms and sometimes (why not), abstraction.
+    <br>
+    <br>
+  </div>
+</ng-template>
+<ng-template [ngIf]="menuSelected[2] && state == 'menu'">
+  <div class="description animatedX3 fadeInUp">
+    Recognition section
+  </div>
+</ng-template>
+<ng-template [ngIf]="menuSelected[3] && state == 'menu'">
+  <div class="description animatedX3 fadeInUp">
+    Clients section
+  </div>
+</ng-template>
+
+<ng-template [ngIf]="state == 'open'">
+  <div class="menu-position-left menu-option">
+    <div (click)="changeSelectedMenu(1)" [ngClass]="{'item-selected': menuSelected[0]}"
+      class="animatedX1 fadeInDown b-20">
+      Work
+    </div>
+    <div (click)="changeSelectedMenu(2)" [ngClass]="{'item-selected': menuSelected[1]}"
+      class="animatedX2 fadeInDown b-20">
+      Bio
+    </div>
+    <div (click)="changeSelectedMenu(3)" [ngClass]="{'item-selected': menuSelected[2]}"
+      class="animatedX3 fadeInDown b-20">
+      Recognition
+    </div>
+    <div (click)="changeSelectedMenu(4)" [ngClass]="{'item-selected': menuSelected[3]}"
+      class="animatedX4 fadeInDown b-20">
+      Clients
+    </div>
+  </div>
+
+  <div class="menu-position-rigth menu-description">
+    <div class="animatedX4 fadeInUp b-20">
+      For any work inquire / collaboration,
+      <br>
+      get in touch and...let’s do it!
+    </div>
+    <div class="title-underline animatedX5 fadeInUp b-20">
+      <strong>
+        contact@paranoidme.com
+      </strong>
+    </div>
+    <div class="animatedX6 fadeInUp b-20">
+      <img src="assets/image/behance-logo.svg" class="icons">
+      <img src="assets/image/instagram.svg" class="icons">
+      <img src="assets/image/dribble-big-logo.svg" class="icons">
+    </div>
+  </div>
+</ng-template>
 
 <router-outlet></router-outlet>
