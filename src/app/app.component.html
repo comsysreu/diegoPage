@@ -1,5 +1,5 @@
 <div class="menu-top">
-  <label class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'">MENU</label>
+  <label class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'">Menu</label>
   <label class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</label>
 </div>
 <ng-template [ngIf]="menuSelected[0] && state == 'menu'">
@@ -33,8 +33,55 @@
   </div>
 </ng-template>
 <ng-template [ngIf]="menuSelected[3] && state == 'menu'">
-  <div class="description animatedX3 fadeInUp">
-    Clients section
+  <div class="menu-position-left-clients menu-option">
+    <div class="animatedX3 fadeInUp">
+      Adobe
+      <br>
+      Ultra Music Festival
+      <br>
+      Paramount Pictures
+      <br>
+      Sony Mobile
+      <br>
+      Nike
+      <br>
+      Rossignol
+      <br>
+      HBO
+      <br>
+      Atlas Games
+      <br>
+      Republic Records
+      <br>
+      Warner Music
+      <br>
+      Spanish Cycling Federation (RFEC)
+      <br>
+      Konami
+      <br>
+      Caffeine.TV
+      <br>
+      MVS TV
+      <br>
+      <br>
+    </div>
+  </div>
+  <div class="menu-position-rigth-clientes menu-description">
+    <div class="animatedX4 fadeInUp b-20">
+      For any work inquire / collaboration,
+      <br>
+      get in touch and...let’s do it!
+    </div>
+    <div class="title-underline animatedX5 fadeInUp b-20">
+      <strong>
+        contact@paranoidme.com
+      </strong>
+    </div>
+    <div class="animatedX6 fadeInUp b-20">
+      <img src="assets/image/behance-logo.svg" class="icons">
+      <img src="assets/image/instagram.svg" class="icons">
+      <img src="assets/image/dribble-big-logo.svg" class="icons">
+    </div>
   </div>
 </ng-template>
 

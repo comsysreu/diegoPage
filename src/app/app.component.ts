@@ -7,24 +7,42 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  state: string = 'open'
-  menuSelected: any = [false, true, false, false]
+  state: string = 'open';
+  menuSelected: any = [false, true, false, false];
+
+  constructor() {
+    if (this.state == 'open') {
+      document.body.style.backgroundColor = "#f2f2f2";
+    } else {
+
+    }
+  }
 
   changeMenu(value: string) {
     this.state = value;
+    this.changeBackgroundColor();
   }
 
   changeSelectedMenu(position: number) {
     if (position == 1) {
-      this.menuSelected = [true, false, false, false]
+      this.menuSelected = [true, false, false, false];
     } else if (position == 2) {
-      this.menuSelected = [false, true, false, false]
+      this.menuSelected = [false, true, false, false];
     } else if (position == 3) {
-      this.menuSelected = [false, false, true, false]
+      this.menuSelected = [false, false, true, false];
     } else if (position == 4) {
-      this.menuSelected = [false, false, false, true]
+      this.menuSelected = [false, false, false, true];
     }
     this.state = 'menu';
+    this.changeBackgroundColor();
+  }
+
+  changeBackgroundColor() {
+    if (this.state == 'open') {
+      document.body.style.backgroundColor = "#f2f2f2";
+    } else {
+      document.body.style.backgroundColor = "#bfbfbf";
+    }
   }
 
 
