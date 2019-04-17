@@ -8,13 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   state: string = 'open';
-  menuSelected: any = [false, true, false, false];
+  menuSelected: any = [false, false, false, false];
 
   constructor() {
     if (this.state == 'open') {
       document.body.style.backgroundColor = "#f2f2f2";
-    } else {
-
     }
   }
 

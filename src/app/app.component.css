@@ -19,25 +19,19 @@ body {
     letter-spacing: normal;
     color: #ffffff;
     margin-top: 50px;
-    margin-left: 11%;
-    margin-right: 14%;
     position: absolute;
-    top: 370px;
+    top: 305px;
     height: auto;
+    margin-left: 14%;
+    margin-right: 14%;
 }
 
 .img {
     height: 320px;
     margin-top: 20px;
-    position: fixed;
-    left: 14%;
-    right: 14%;
-}
-
-.menu-top {
-    text-align: right;
-    margin-top: 40px;
-    margin-right: 22%
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .menu {
@@ -49,11 +43,9 @@ body {
     line-height: normal;
     letter-spacing: normal;
     color: #000000;
-    position: fixed;
-    text-align: center;
-    word-wrap: break-word;
-    width: auto;
     cursor: pointer;
+    margin-right: 44px;
+    z-index: 10;
 }
 
 .menu-option {
@@ -122,26 +114,41 @@ body {
     margin-bottom: 10px;
 }
 
+.menu-position-rigth-clientes {
+    position: absolute;
+    top: 615px;
+    left: 45px;
+    text-align: left;
+}
+
+.menu-position-left-clients {
+    position: absolute;
+    top: 109px;
+    left: 45px;
+    cursor: pointer;
+    text-align: left;
+    z-index: 5;
+}
+
 /* Galaxy s5 */
 
 @media only screen and (min-width: 321px) {
     .description {
         margin-top: 50px;
-        margin-left: 14%;
+        margin-left: 16%;
         margin-right: 16%;
-        top: 370px;
+        top: 305px;
     }
     .img {
         width: 243px;
         height: 320px;
         margin-top: 20px;
-        position: fixed;
-        left: 16%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
-    .menu-top {
-        text-align: right;
-        margin-top: 40px;
-        margin-right: 23%
+    .menu {
+        margin-right: 58px;
     }
 }
 
@@ -150,21 +157,20 @@ body {
 @media only screen and (min-width: 361px) {
     .description {
         margin-top: 50px;
-        margin-left: 15%;
-        margin-right: 18%;
-        top: 380px;
+        margin-left: 17%;
+        margin-right: 17%;
+        top: 305px;
     }
     .img {
         width: 243px;
         height: 320px;
         margin-top: 20px;
-        position: fixed;
-        left: 17%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
-    .menu-top {
-        text-align: right;
-        margin-top: 40px;
-        margin-right: 25%
+    .menu {
+        margin-right: 66px;
     }
 }
 
@@ -173,21 +179,20 @@ body {
 @media only screen and (min-width: 376px) {
     .description {
         margin-top: 50px;
-        margin-left: 15%;
-        margin-right: 18%;
-        top: 400px;
+        margin-left: 17%;
+        margin-right: 17%;
+        top: 340px;
     }
     .img {
         width: 275px;
         height: 355px;
         margin-top: 20px;
-        position: fixed;
-        left: 17%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
-    .menu-top {
-        text-align: right;
-        margin-top: 40px;
-        margin-right: 22%
+    .menu {
+        margin-right: 68px;
     }
 }
 
@@ -200,47 +205,68 @@ body {
     .description {
         font-size: 50px;
         line-height: 1.12;
-        margin-left: 21%;
-        margin-right: 21%;
-        top: 675px;
+        margin-left: 23%;
+        margin-right: 23%;
+        top: 595px;
     }
     .img {
         width: 422px;
         height: 600px;
         margin-top: 30px;
-        left: 23%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
-    .menu-top {
-        text-align: right;
-        margin-top: 52px;
-        margin-right: 28%;
+    .menu {
+        margin-right: 170px;
+    }
+    .menu-option {
+        font-size: 40px;
+    }
+    .menu-position-rigth-clientes {
+        position: absolute;
+        top: 825px;
+        left: 75px;
+        text-align: left;
+    }
+    .menu-position-left-clients {
+        position: absolute;
+        top: 109px;
+        left: 75px;
+        cursor: pointer;
+        text-align: left;
+        z-index: 5;
+    }
+    .icons {
+        margin-left: 0px;
+        margin-right: 80px;
+        width: 15px;
+        height: 16px;
     }
 }
 
 /* Ipad  Pro*/
 
 @media only screen and (min-width: 769px) {
-    .menu {
-        font-size: 16px;
-    }
     .description {
         text-align: center;
-        font-size: 50px;
+        font-size: 44px;
         line-height: 1.12;
-        margin-left: 8%;
-        margin-right: 8%;
-        top: 404px;
+        width: 100%;
+        margin: 0px;
+        top: 315px;
     }
     .img {
         width: 422px;
         height: 600px;
         margin-top: 30px;
-        left: 29%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
-    .menu-top {
-        text-align: right;
-        margin-top: 52px;
-        margin-right: 15%;
+    .menu {
+        font-size: 16px;
+        margin-right: 58px;
     }
     .menu-option {
         font-size: 50px;
@@ -263,6 +289,26 @@ body {
     .b-20 {
         margin-bottom: 20px;
     }
+    .menu-position-rigth-clientes {
+        position: fixed;
+        top: 1100px;
+        left: 10%;
+        text-align: left;
+    }
+    .menu-position-left-clients {
+        position: absolute;
+        top: 200px;
+        left: 10%;
+        cursor: pointer;
+        text-align: left;
+        z-index: 5;
+    }
+    .icons {
+        margin-left: 0px;
+        margin-right: 80px;
+        width: 15px;
+        height: 16px;
+    }
 }
 
 /* Desktop */
@@ -270,25 +316,23 @@ body {
 @media only screen and (min-width: 1025px) {
     .menu {
         font-size: 16px;
+        margin-right: 170px;
     }
     .description {
         font-size: 50px;
         line-height: 1.12;
         text-align: center;
-        margin-left: 15%;
-        margin-right: 15%;
+        width: 100%;
+        margin: 0px;
         top: 404px;
     }
     .img {
         width: 422px;
         height: 600px;
         margin-top: 30px;
-        left: 38%;
-    }
-    .menu-top {
-        text-align: right;
-        margin-top: 52px;
-        margin-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .menu-option {
         font-size: 50px;
@@ -310,14 +354,13 @@ body {
     .menu-position-rigth {
         position: absolute;
         top: 50%;
-        right: 7%;
+        right: 170px;
         text-align: right;
     }
-
     .menu-position-rigth-clientes {
         position: fixed;
         top: 50%;
-        right: 7%;
+        right: 170px;
         text-align: right;
     }
     .menu-position-left-clients {

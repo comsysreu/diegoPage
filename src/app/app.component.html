@@ -1,6 +1,6 @@
-<div class="menu-top">
-  <label class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'">Menu</label>
-  <label class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</label>
+<div style="width: 100%; position: fixed;  top: 50px; text-align: end;">
+  <div class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'">Menu</div>
+  <div class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</div>
 </div>
 <ng-template [ngIf]="menuSelected[0] && state == 'menu'">
   <div class="description animatedX3 fadeInUp">
@@ -8,23 +8,38 @@
   </div>
 </ng-template>
 <ng-template [ngIf]="menuSelected[1] && state == 'menu'">
-  <div style="text-align:center; margin-top: 32px;">
+  <div style="width: 100%; height: auto; position: fixed;  top: 100px;">
     <img alt="Logo" class="img animatedX3 fadeInDown" src="assets/image/photo.jpg">
   </div>
-  <div class="description animatedX3 fadeInUp">
-    My name is Diego and I am a multidisciplinary artist, graphic designer and illustrator based in Madrid, Spain.
-    <br>
-    <br>
-    I’ve been doing work for high profile clients and top brands around the world with my personal signature
-    ‘Paranoidme’
-    since 2009.
-    <br>
-    <br>
-    Heavily influenced by cinema, art nouveau and a mixture of ancient and contemporary cultures, my work is
-    imaginative
-    and detailed, featuring unique color palettes, forms and sometimes (why not), abstraction.
-    <br>
-    <br>
+  <div style="width: 100%; position: absolute; top: 135px;">
+    <div class="description animatedX3 fadeInUp">
+      My name is Diego and I am a
+      <br>
+      multidisciplinary artist, graphic designer and
+      <br>
+      illustrator based in Madrid, Spain.
+      <br>
+      <br>
+      I’ve been doing work for high profile clients
+      <br>
+      and top brands around the world with my
+      <br>
+      personal signature ‘Paranoidme’ since 2009.
+      <br>
+      <br>
+      Heavily influenced by cinema, art nouveau and
+      <br>
+      a mixture of ancient and contemporary cultures,
+      <br>
+      my work is imaginative and detailed,
+      <br>
+      featuring unique color palettes,
+      <br>
+      forms and sometimes (why not), abstraction.
+      <br>
+      <br>
+      <br>
+    </div>
   </div>
 </ng-template>
 <ng-template [ngIf]="menuSelected[2] && state == 'menu'">
@@ -63,7 +78,6 @@
       <br>
       MVS TV
       <br>
-      <br>
     </div>
   </div>
   <div class="menu-position-rigth-clientes menu-description">
@@ -81,6 +95,8 @@
       <img src="assets/image/behance-logo.svg" class="icons">
       <img src="assets/image/instagram.svg" class="icons">
       <img src="assets/image/dribble-big-logo.svg" class="icons">
+      <br>
+      <br>
     </div>
   </div>
 </ng-template>
