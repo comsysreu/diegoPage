@@ -7,13 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  state: string = 'open';
-  menuSelected: any = [false, false, false, false];
+  state: string = 'menu';
+  menuSelected: any = [false, false, false, false, true];
+  showIntro: boolean = false;
+  contentIntro: boolean = false;
 
   constructor() {
-    if (this.state == 'open') {
-      document.body.style.backgroundColor = "#f2f2f2";
-    }
+    document.body.style.backgroundColor = "#ffffff";
+
+    setTimeout(() => {
+      this.contentIntro = true
+    }, 3000)
+
+    setTimeout(() => {
+      this.showIntro = true;
+      document.body.style.backgroundColor = "#949494";
+    }, 6000)
   }
 
   changeMenu(value: string) {

@@ -1,227 +1,273 @@
-<div style="width: 100%; position: fixed;  top: 50px; text-align: end;">
-  <div class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'">Menu</div>
-  <div class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</div>
+<div *ngIf="!showIntro" style="text-align: center; padding-top: 24%">
+  <div *ngIf="!contentIntro">
+    <div class="animatedX3 fadeInDown title-intro">
+      PARANOIDME
+    </div>
+    <div class="animatedX3 fadeInUp description-intro">
+      Diego L. Rodriguez
+    </div>
+  </div>
+  <div *ngIf="contentIntro">
+    <div class="animatedX3 fadeInUp_A title-intro">
+      PARANOIDME
+    </div>
+    <div class="animatedX3 fadeInDown_A description-intro">
+      Diego L. Rodriguez
+    </div>
+  </div>
 </div>
-<ng-template [ngIf]="menuSelected[0] && state == 'menu'">
-  <div class="description animatedX3 fadeInUp">
-    Work section
+<div *ngIf="showIntro">
+  <div style="width: 100%; position: fixed;  top: 50px; text-align: end; z-index: 5;">
+    <div class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'" [ngClass]="{'menu-white': menuSelected[4]}">Menu</div>
+    <div class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</div>
   </div>
-</ng-template>
-<ng-template [ngIf]="menuSelected[1] && state == 'menu'">
-  <div style="width: 100%; height: auto; position: fixed;  top: 100px;">
-    <img alt="Logo" class="img animatedX3 fadeInDown" src="assets/image/photo.jpg">
-  </div>
-  <div style="width: 100%; position: absolute; top: 135px;">
+  <ng-template [ngIf]="menuSelected[0] && state == 'menu'">
     <div class="description animatedX3 fadeInUp">
-      My name is Diego and I am a
-      <br>
-      multidisciplinary artist, graphic designer and
-      <br>
-      illustrator based in Madrid, Spain.
-      <br>
-      <br>
-      I’ve been doing work for high profile clients
-      <br>
-      and top brands around the world with my
-      <br>
-      personal signature ‘Paranoidme’ since 2009.
-      <br>
-      <br>
-      Heavily influenced by cinema, art nouveau and
-      <br>
-      a mixture of ancient and contemporary cultures,
-      <br>
-      my work is imaginative and detailed,
-      <br>
-      featuring unique color palettes,
-      <br>
-      forms and sometimes (why not), abstraction.
-      <br>
-      <br>
-      <br>
+      Work section
     </div>
-  </div>
-</ng-template>
-<ng-template [ngIf]="menuSelected[2] && state == 'menu'">
-  <div class="menu-position-left-recog">
-    <div class="animatedX3 fadeInUp">
-      <div class="h1">
-        Adobe Guest Speaker
-      </div>
-      <div class="h2">
-        (Procesos Creativos 2017)
-      </div>
-      <br>
-      <div class="h1">
-        Adobe Illustrator CC 2015
-      </div>
-      <div class="h2">
-        (Start Screen Global Campaign)
-      </div>
-      <br>
-      <div class="h1">
-        Cannes 2013 Awards
-      </div>
-      <div class="h2">
-        (For Konami / Enter The Game Campaign)
-      </div>
-      <br>
-      <div class="h1">
-        Promax/BDA 2011 Awards
-      </div>
-      <div class="h2">
-        (For MVS TV / Cinturon de oro Campaign)
-      </div>
-      <br>
-      <div class="h1">
-        OFFF Festival 2011
-      </div>
-      <div class="h2">
-        (Speaker with Slashtree Collective)
-      </div>
-      <br>
-      <div class="h1">
-        Not There Exhibition
-      </div>
-      <div class="h2">
-        (Fu art gallery, Miami U.S)
-      </div>
-      <br>
-      <div class="h1">
-        House of Vans London
-      </div>
-      <div class="h2">
-        (TMNT Exhibition)
-      </div>
-      <br>
-      <div class="h1">
-        House of Vans London
-      </div>
-      <div class="h2">
-        (FESTIFEEL 2015)
-      </div>
-      <br>
-      <br>
+  </ng-template>
+  <ng-template [ngIf]="menuSelected[1] && state == 'menu'">
+    <div style="width: 100%; height: auto; position: fixed;  top: 100px;">
+      <img alt="Logo" class="img animatedX3 fadeInDown" src="assets/image/photo.jpg">
     </div>
-  </div>
-  <div class="menu-position-rigth-recog">
-    <div class="animatedX4 fadeInUp">
-      <div class="h1">
-        Featured Work
-      </div>
-    </div>
-    <br>
-    <div class="animatedX5 fadeInUp">
-      <div class="h2">
-        Behance
+    <div style="width: 100%; position: absolute; top: 135px;">
+      <div class="description animatedX3 fadeInUp">
+        My name is Diego and I am a
         <br>
-        Advanced Photoshop uk
+        multidisciplinary artist, graphic designer and
         <br>
-        Juxtapox Magazine
+        illustrator based in Madrid, Spain.
         <br>
-        Computer Arts uk
         <br>
-        Abduzeedo’s
+        I’ve been doing work for high profile clients
         <br>
-        S:Best of Spanish Artist
+        and top brands around the world with my
+        <br>
+        personal signature ‘Paranoidme’ since 2009.
+        <br>
+        <br>
+        Heavily influenced by cinema, art nouveau and
+        <br>
+        a mixture of ancient and contemporary cultures,
+        <br>
+        my work is imaginative and detailed,
+        <br>
+        featuring unique color palettes,
+        <br>
+        forms and sometimes (why not), abstraction.
         <br>
         <br>
         <br>
       </div>
     </div>
-  </div>
-</ng-template>
-<ng-template [ngIf]="menuSelected[3] && state == 'menu'">
-  <div class="menu-position-left-clients menu-option">
-    <div class="animatedX3 fadeInUp">
-      Adobe
-      <br>
-      Ultra Music Festival
-      <br>
-      Paramount Pictures
-      <br>
-      Sony Mobile
-      <br>
-      Nike
-      <br>
-      Rossignol
-      <br>
-      HBO
-      <br>
-      Atlas Games
-      <br>
-      Republic Records
-      <br>
-      Warner Music
-      <br>
-      Spanish Cycling Federation (RFEC)
-      <br>
-      Konami
-      <br>
-      Caffeine.TV
-      <br>
-      MVS TV
-      <br>
+  </ng-template>
+  <ng-template [ngIf]="menuSelected[2] && state == 'menu'">
+    <div class="menu-position-left-recog">
+      <div class="animatedX3 fadeInUp">
+        <div class="h1">
+          Adobe Guest Speaker
+        </div>
+        <div class="h2">
+          (Procesos Creativos 2017)
+        </div>
+        <br>
+        <div class="h1">
+          Adobe Illustrator CC 2015
+        </div>
+        <div class="h2">
+          (Start Screen Global Campaign)
+        </div>
+        <br>
+        <div class="h1">
+          Cannes 2013 Awards
+        </div>
+        <div class="h2">
+          (For Konami / Enter The Game Campaign)
+        </div>
+        <br>
+        <div class="h1">
+          Promax/BDA 2011 Awards
+        </div>
+        <div class="h2">
+          (For MVS TV / Cinturon de oro Campaign)
+        </div>
+        <br>
+        <div class="h1">
+          OFFF Festival 2011
+        </div>
+        <div class="h2">
+          (Speaker with Slashtree Collective)
+        </div>
+        <br>
+        <div class="h1">
+          Not There Exhibition
+        </div>
+        <div class="h2">
+          (Fu art gallery, Miami U.S)
+        </div>
+        <br>
+        <div class="h1">
+          House of Vans London
+        </div>
+        <div class="h2">
+          (TMNT Exhibition)
+        </div>
+        <br>
+        <div class="h1">
+          House of Vans London
+        </div>
+        <div class="h2">
+          (FESTIFEEL 2015)
+        </div>
+        <br>
+        <br>
+      </div>
     </div>
-  </div>
-  <div class="menu-position-rigth-clientes menu-description">
-    <div class="animatedX4 fadeInUp b-20">
-      For any work inquire / collaboration,
+    <div class="menu-position-rigth-recog">
+      <div class="animatedX4 fadeInUp">
+        <div class="h1">
+          Featured Work
+        </div>
+      </div>
       <br>
-      get in touch and...let’s do it!
+      <div class="animatedX5 fadeInUp">
+        <div class="h2">
+          Behance
+          <br>
+          Advanced Photoshop uk
+          <br>
+          Juxtapox Magazine
+          <br>
+          Computer Arts uk
+          <br>
+          Abduzeedo’s
+          <br>
+          S:Best of Spanish Artist
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
     </div>
-    <div class="title-underline animatedX5 fadeInUp b-20">
-      <strong>
-        contact@paranoidme.com
-      </strong>
+  </ng-template>
+  <ng-template [ngIf]="menuSelected[3] && state == 'menu'">
+    <div class="menu-position-left-clients menu-option">
+      <div class="animatedX3 fadeInUp">
+        Adobe
+        <br>
+        Ultra Music Festival
+        <br>
+        Paramount Pictures
+        <br>
+        Sony Mobile
+        <br>
+        Nike
+        <br>
+        Rossignol
+        <br>
+        HBO
+        <br>
+        Atlas Games
+        <br>
+        Republic Records
+        <br>
+        Warner Music
+        <br>
+        Spanish Cycling Federation (RFEC)
+        <br>
+        Konami
+        <br>
+        Caffeine.TV
+        <br>
+        MVS TV
+        <br>
+      </div>
     </div>
-    <div class="animatedX6 fadeInUp b-20">
-      <img src="assets/image/behance-logo.svg" class="icons">
-      <img src="assets/image/instagram.svg" class="icons">
-      <img src="assets/image/dribble-big-logo.svg" class="icons">
-      <br>
-      <br>
+    <div class="menu-position-rigth-clientes menu-description">
+      <div class="animatedX4 fadeInUp b-20">
+        For any work inquire / collaboration,
+        <br>
+        get in touch and...let’s do it!
+      </div>
+      <div class="title-underline animatedX5 fadeInUp b-20">
+        <strong>
+          contact@paranoidme.com
+        </strong>
+      </div>
+      <div class="animatedX6 fadeInUp b-20">
+        <img src="assets/image/behance-logo.svg" class="icons">
+        <img src="assets/image/instagram.svg" class="icons">
+        <img src="assets/image/dribble-big-logo.svg" class="icons">
+        <br>
+        <br>
+      </div>
     </div>
-  </div>
-</ng-template>
+  </ng-template>
+  <ng-template [ngIf]="menuSelected[4] && state == 'menu'">
+    <div class="animatedX3 fadeInDown listOne" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
+    </div>
+    <div class="animatedX3 fadeInDown listTwo" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
+    </div>
+    <div class="animatedX3 fadeInDown listThree" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
+    </div>
+    <div class="animatedX3 fadeInDown listTwo" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
+    </div>
+    <div class="animatedX3 fadeInDown listOne" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
+    </div>
+    <div class="description animatedX3 fadeInUp">
+      <div class="name-intro-second">
+        Diego L. Rodríguez
+      </div>
+      <div class="title-intro-second">
+        Paranoidme
+      </div>
+      <div class="name-intro-second">
+        Multidisciplinary artist & illustrator
+        <br>
+        based in Madrid, Spain.
+      </div>
+      <!-- <div class="name-intro-second" style="margin-top: 24%; margin-bottom: 30px">
+        Scroll
+      </div> -->
+    </div>
+  </ng-template>
+  <ng-template [ngIf]="state == 'open'">
+    <div class="menu-position-left menu-option">
+      <div (click)="changeSelectedMenu(1)" [ngClass]="{'item-selected': menuSelected[0]}"
+        class="animatedX1 fadeInDown b-20">
+        Work
+      </div>
+      <div (click)="changeSelectedMenu(2)" [ngClass]="{'item-selected': menuSelected[1]}"
+        class="animatedX2 fadeInDown b-20">
+        Bio
+      </div>
+      <div (click)="changeSelectedMenu(3)" [ngClass]="{'item-selected': menuSelected[2]}"
+        class="animatedX3 fadeInDown b-20">
+        Recognition
+      </div>
+      <div (click)="changeSelectedMenu(4)" [ngClass]="{'item-selected': menuSelected[3]}"
+        class="animatedX4 fadeInDown b-20">
+        Clients
+      </div>
+    </div>
 
-<ng-template [ngIf]="state == 'open'">
-  <div class="menu-position-left menu-option">
-    <div (click)="changeSelectedMenu(1)" [ngClass]="{'item-selected': menuSelected[0]}"
-      class="animatedX1 fadeInDown b-20">
-      Work
+    <div class="menu-position-rigth menu-description">
+      <div class="animatedX4 fadeInUp b-20">
+        For any work inquire / collaboration,
+        <br>
+        get in touch and...let’s do it!
+      </div>
+      <div class="title-underline animatedX5 fadeInUp b-20">
+        <strong>
+          contact@paranoidme.com
+        </strong>
+      </div>
+      <div class="animatedX6 fadeInUp b-20">
+        <img src="assets/image/behance-logo.svg" class="icons">
+        <img src="assets/image/instagram.svg" class="icons">
+        <img src="assets/image/dribble-big-logo.svg" class="icons">
+      </div>
     </div>
-    <div (click)="changeSelectedMenu(2)" [ngClass]="{'item-selected': menuSelected[1]}"
-      class="animatedX2 fadeInDown b-20">
-      Bio
-    </div>
-    <div (click)="changeSelectedMenu(3)" [ngClass]="{'item-selected': menuSelected[2]}"
-      class="animatedX3 fadeInDown b-20">
-      Recognition
-    </div>
-    <div (click)="changeSelectedMenu(4)" [ngClass]="{'item-selected': menuSelected[3]}"
-      class="animatedX4 fadeInDown b-20">
-      Clients
-    </div>
-  </div>
-
-  <div class="menu-position-rigth menu-description">
-    <div class="animatedX4 fadeInUp b-20">
-      For any work inquire / collaboration,
-      <br>
-      get in touch and...let’s do it!
-    </div>
-    <div class="title-underline animatedX5 fadeInUp b-20">
-      <strong>
-        contact@paranoidme.com
-      </strong>
-    </div>
-    <div class="animatedX6 fadeInUp b-20">
-      <img src="assets/image/behance-logo.svg" class="icons">
-      <img src="assets/image/instagram.svg" class="icons">
-      <img src="assets/image/dribble-big-logo.svg" class="icons">
-    </div>
-  </div>
-</ng-template>
-
+  </ng-template>
+</div>
 <router-outlet></router-outlet>
