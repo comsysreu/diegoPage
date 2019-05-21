@@ -1,24 +1,25 @@
 <div *ngIf="!showIntro" style="text-align: center; padding-top: 24%">
   <div *ngIf="!contentIntro">
-    <div class="animatedX3 fadeInDown title-intro">
+    <div class="animatedX1 fadeInDown title-intro">
       PARANOIDME
     </div>
-    <div class="animatedX3 fadeInUp description-intro">
+    <div class="animatedX1 fadeInUp description-intro">
       Diego L. Rodriguez
     </div>
   </div>
   <div *ngIf="contentIntro">
-    <div class="animatedX3 fadeInUp_A title-intro">
+    <div class="animatedX1 fadeInUp_A title-intro">
       PARANOIDME
     </div>
-    <div class="animatedX3 fadeInDown_A description-intro">
+    <div class="animatedX1 fadeInDown_A description-intro">
       Diego L. Rodriguez
     </div>
   </div>
 </div>
 <div *ngIf="showIntro">
   <div style="width: 100%; position: fixed;  top: 50px; text-align: end; z-index: 5;">
-    <div class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'" [ngClass]="{'menu-white': menuSelected[4]}">Menu</div>
+    <div class="menu" (click)="changeMenu('open')" *ngIf="state == 'menu'" [ngClass]="{'menu-white': menuSelected[4]}">
+      Menu</div>
     <div class="menu" (click)="changeMenu('menu')" *ngIf="state == 'open'">Close</div>
   </div>
   <ng-template [ngIf]="menuSelected[0] && state == 'menu'">
@@ -204,17 +205,20 @@
     </div>
   </ng-template>
   <ng-template [ngIf]="menuSelected[4] && state == 'menu'">
-    <div class="animatedX3 fadeInDown listOne" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
+    <div class="animatedX4 zoomIn">
+      <div class="animatedX6 fadeInDown listOne" style="height: 2500px;">
+      </div>
+      <div class="animatedX6 fadeInDown listTwo" style="height: 2500px;">
+      </div>
+      <div class="animatedX6 fadeInDown listThree"
+        style="height: 2500px;">
+      </div>
+      <div class="animatedX6 fadeInDown listTwoX2" style="height: 2500px;">
+      </div>
+      <div class="animatedX6 fadeInDown listOneX2" style="height: 2500px;">
+      </div>
     </div>
-    <div class="animatedX3 fadeInDown listTwo" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
-    </div>
-    <div class="animatedX3 fadeInDown listThree" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
-    </div>
-    <div class="animatedX3 fadeInDown listTwo" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
-    </div>
-    <div class="animatedX3 fadeInDown listOne" style="height: 2500px; width: 14%; margin-left: 3%; margin-right: 3%">
-    </div>
-    <div class="description animatedX3 fadeInUp">
+    <div class="description animatedX3 fadeInDown" *ngIf="!showSecondIntro">
       <div class="name-intro-second">
         Diego L. Rodríguez
       </div>
@@ -226,9 +230,31 @@
         <br>
         based in Madrid, Spain.
       </div>
-      <!-- <div class="name-intro-second" style="margin-top: 24%; margin-bottom: 30px">
+    </div>
+    <div class="description animatedX3 fadeInUp" *ngIf="!showSecondIntro">
+      <div class="name-intro-second" style="margin-top: 24%; margin-bottom: 30px; cursor: pointer;">
         Scroll
-      </div> -->
+      </div>
+    </div>
+    <div class="description animatedX3 fadeInUp_A" *ngIf="showSecondIntro">
+      <div class="name-intro-second">
+        Diego L. Rodríguez
+      </div>
+      <div class="title-intro-second">
+        Paranoidme
+      </div>
+      <div class="name-intro-second">
+        Multidisciplinary artist & illustrator
+        <br>
+        based in Madrid, Spain.
+      </div>
+    </div>
+    <div class="animatedX5 zoomIn">
+      <div class="description animatedX3 fadeInUp_A" *ngIf="showSecondIntro">
+        <div class="name-intro-second" style="margin-top: 24%; margin-bottom: 30px; cursor: pointer;">
+            Scroll
+          </div>
+      </div>
     </div>
   </ng-template>
   <ng-template [ngIf]="state == 'open'">

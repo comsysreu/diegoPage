@@ -18,6 +18,23 @@ body {
     background-repeat: no-repeat;
     -webkit-filter: grayscale(100%) brightness(60%);
     filter: grayscale(100%) brightness(60%);
+    width: 44%;
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+.listOneX2 {
+    float: left;
+    text-align: center;
+    background-image: url("../assets/image/frontPage/0bc63a4198783.5c8faff57703d.jpg"), url("../assets/image/frontPage/18db5c24362302.56049e2acc1c7.jpg"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"), url("../assets/image/frontPage/3b344319477101.562db15769a6a.png"), url("../assets/image/frontPage/e67b5e10031253.560de55becf65.jpg");
+    background-position: 0px 2250px, 0px 1650px, 0px 1050px, 0px 450px, 0px -150px;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) brightness(60%);
+    filter: grayscale(100%) brightness(60%);
+    visibility: hidden;
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%
 }
 
 .listTwo {
@@ -27,15 +44,35 @@ body {
     background-repeat: no-repeat;
     -webkit-filter: grayscale(100%) brightness(60%);
     filter: grayscale(100%) brightness(60%);
+    width: 44%;
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+.listTwoX2 {
+    float: left;
+    background-image: url("../assets/image/frontPage/49a6714198783.5c8faff577d50.jpg"), url("../assets/image/frontPage/52786610031253.560de55f9f8b4.jpg"), url("../assets/image/frontPage/5a5f9242344521.57c980c54c6ac.png"), url("../assets/image/frontPage/db3dc64198783.5c8faff57818b.jpg");
+    background-position: 0px 1900px, 0px 1300px, 0px 700px, 0px 100px;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) brightness(60%);
+    filter: grayscale(100%) brightness(60%);
+    visibility: hidden;
+    width: 14%;
+    margin-left: 3%;
+    margin-right: 3%
 }
 
 .listThree {
     float: left;
-    background-image: url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg"), url("../assets/image/frontPage/7fa5ee46066345.584702e771246.jpg"), url("../assets/image/frontPage/8e926e69519831.5b847096e5ceb.png"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"),url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg");
+    background-image: url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg"), url("../assets/image/frontPage/7fa5ee46066345.584702e771246.jpg"), url("../assets/image/frontPage/8e926e69519831.5b847096e5ceb.png"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"), url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg");
     background-position: 0px 2250px, 0px 1675px, 0px 1075px, 0px 500px, 0px -75px;
     background-repeat: no-repeat;
     -webkit-filter: grayscale(100%) brightness(60%);
     filter: grayscale(100%) brightness(60%);
+    visibility: hidden;
+    width: 14%;
+    margin-left: 3%;
+    margin-right: 3%
 }
 
 .title-intro {
@@ -566,6 +603,36 @@ body {
         top: 40%;
         text-align: right
     }
+    .listOne {
+        visibility: visible;
+        width: 14%;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+    .listOneX2 {
+        visibility: visible;
+        width: 14%;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+    .listTwo {
+        visibility: visible;
+        width: 14%;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+    .listTwoX2 {
+        visibility: visible;
+        width: 14%;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+    .listThree {
+        visibility: visible;
+        width: 14%;
+        margin-left: 3%;
+        margin-right: 3%
+    }
 }
 
 .animatedX1 {
@@ -732,4 +799,31 @@ body {
 .fadeInUp_A {
     -webkit-animation-name: fadeInUp_A;
     animation-name: fadeInUp_A;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
 }

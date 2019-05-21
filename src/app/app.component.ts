@@ -11,18 +11,23 @@ export class AppComponent {
   menuSelected: any = [false, false, false, false, true];
   showIntro: boolean = false;
   contentIntro: boolean = false;
+  showSecondIntro: boolean = false;
 
   constructor() {
     document.body.style.backgroundColor = "#ffffff";
 
     setTimeout(() => {
       this.contentIntro = true
-    }, 3000)
+    }, 1000)
 
     setTimeout(() => {
       this.showIntro = true;
       document.body.style.backgroundColor = "#949494";
-    }, 6000)
+    }, 2000)
+
+    setTimeout(() => {
+      this.showSecondIntro = true;
+    }, 8000)
   }
 
   changeMenu(value: string) {
@@ -51,6 +56,4 @@ export class AppComponent {
       document.body.style.backgroundColor = "#bfbfbf";
     }
   }
-
-
 }
