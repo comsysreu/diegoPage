@@ -1,3 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
 @font-face {
     font-family: 'HelveticaNeueLTCom-Lt';
     src: local("HelveticaNeueLTCom-Lt"), url('./assets/fonts/HelveticaNeueLTCom-Lt.ttf') format('truetype');
@@ -18,7 +21,7 @@
     src: local("HelveticaNeueLTCom-Ex"), url('./assets/fonts/HelveticaNeueLTCom-Ex.TTF') format('truetype');
 }
 
-body{
+body {
     margin: 0px;
     background-color: #bfbfbf;
 }

@@ -13,66 +13,64 @@ body {
 .listOne {
     float: left;
     text-align: center;
-    background-image: url("../assets/image/frontPage/0bc63a4198783.5c8faff57703d.jpg"), url("../assets/image/frontPage/18db5c24362302.56049e2acc1c7.jpg"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"), url("../assets/image/frontPage/3b344319477101.562db15769a6a.png"), url("../assets/image/frontPage/e67b5e10031253.560de55becf65.jpg");
+    background-image: url("../assets/image/frontPage/8e926e69519831.5b847096e5ceb.png"), url("../assets/image/frontPage/4bb83517443277.562ba19ae7ca8.png"), url("../assets/image/frontPage/3b344319477101.562db15769a6a.png"), url("../assets/image/frontPage/b7152949561751.58b832db56dfc.png"), url("../assets/image/frontPage/7721d676073333.5c5ed05a49319.png");
     background-position: 0px 2250px, 0px 1650px, 0px 1050px, 0px 450px, 0px -150px;
     background-repeat: no-repeat;
     -webkit-filter: grayscale(100%) brightness(60%);
     filter: grayscale(100%) brightness(60%);
-    width: 44%;
-    margin-left: 2%;
+    width: 48%;
+    margin-left: 0%;
     margin-right: 2%
-}
-
-.listOneX2 {
-    float: left;
-    text-align: center;
-    background-image: url("../assets/image/frontPage/0bc63a4198783.5c8faff57703d.jpg"), url("../assets/image/frontPage/18db5c24362302.56049e2acc1c7.jpg"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"), url("../assets/image/frontPage/3b344319477101.562db15769a6a.png"), url("../assets/image/frontPage/e67b5e10031253.560de55becf65.jpg");
-    background-position: 0px 2250px, 0px 1650px, 0px 1050px, 0px 450px, 0px -150px;
-    background-repeat: no-repeat;
-    -webkit-filter: grayscale(100%) brightness(60%);
-    filter: grayscale(100%) brightness(60%);
-    visibility: hidden;
-    width: 30%;
-    margin-left: 3%;
-    margin-right: 3%
 }
 
 .listTwo {
     float: left;
-    background-image: url("../assets/image/frontPage/49a6714198783.5c8faff577d50.jpg"), url("../assets/image/frontPage/52786610031253.560de55f9f8b4.jpg"), url("../assets/image/frontPage/5a5f9242344521.57c980c54c6ac.png"), url("../assets/image/frontPage/db3dc64198783.5c8faff57818b.jpg");
+    background-image: url("../assets/image/frontPage/5d57c376073333.5c5ed05a47a5d.png"), url("../assets/image/frontPage/0ef67b78851463.5cb0ad2e4108f.png"), url("../assets/image/frontPage/5a5f9242344521.57c980c54c6ac.png"), url("../assets/image/frontPage/3ee32540600983.57859d6c93a28.png"), url("../assets/image/frontPage/18db5c24362302.56049e2acc1c7.jpg");
     background-position: 0px 1900px, 0px 1300px, 0px 700px, 0px 100px;
     background-repeat: no-repeat;
     -webkit-filter: grayscale(100%) brightness(60%);
     filter: grayscale(100%) brightness(60%);
-    width: 44%;
+    width: 48%;
     margin-left: 2%;
-    margin-right: 2%
-}
-
-.listTwoX2 {
-    float: left;
-    background-image: url("../assets/image/frontPage/49a6714198783.5c8faff577d50.jpg"), url("../assets/image/frontPage/52786610031253.560de55f9f8b4.jpg"), url("../assets/image/frontPage/5a5f9242344521.57c980c54c6ac.png"), url("../assets/image/frontPage/db3dc64198783.5c8faff57818b.jpg");
-    background-position: 0px 1900px, 0px 1300px, 0px 700px, 0px 100px;
-    background-repeat: no-repeat;
-    -webkit-filter: grayscale(100%) brightness(60%);
-    filter: grayscale(100%) brightness(60%);
-    visibility: hidden;
-    width: 14%;
-    margin-left: 3%;
-    margin-right: 3%
+    margin-right: 0%
 }
 
 .listThree {
     float: left;
-    background-image: url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg"), url("../assets/image/frontPage/7fa5ee46066345.584702e771246.jpg"), url("../assets/image/frontPage/8e926e69519831.5b847096e5ceb.png"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"), url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg");
+    background-image: url("../assets/image/frontPage/7436a46040865.56025d8ed5c4c.jpg"), url("../assets/image/frontPage/767cd120837857.560432ddb1a55.jpg"), url("../assets/image/frontPage/b59fa632759611.56951afb46d14.jpg"), url("../assets/image/frontPage/5997db46615319.585b81368edb5.jpg"), url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg");
     background-position: 0px 2250px, 0px 1675px, 0px 1075px, 0px 500px, 0px -75px;
     background-repeat: no-repeat;
     -webkit-filter: grayscale(100%) brightness(60%);
     filter: grayscale(100%) brightness(60%);
     visibility: hidden;
-    width: 14%;
-    margin-left: 3%;
-    margin-right: 3%
+}
+
+.listFour {
+    float: left;
+    text-align: center;
+    background-image: url("../assets/image/frontPage/779ed673857369.5c181225d68e0.jpg"), url("../assets/image/frontPage/49a6714198783.5c8faff577d50.jpg"), url("../assets/image/frontPage/db3dc64198783.5c8faff57818b.jpg"), url("../assets/image/frontPage/52786610031253.560de55f9f8b4.jpg"), url("../assets/image/frontPage/0bc63a4198783.5c8faff57703d.jpg");
+    background-position: 0px 1900px, 0px 1300px, 0px 700px, 0px 100px;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) brightness(60%);
+    filter: grayscale(100%) brightness(60%);
+    visibility: hidden;
+}
+
+.listFive {
+    float: left;
+    background-image: url("../assets/image/frontPage/e67b5e10031253.560de55becf65.jpg"), url("../assets/image/frontPage/6bc80f13146537.562712211b9f7.jpg"), url("../assets/image/frontPage/d9791c52464201.5608e01cea126.jpg"), url("../assets/image/frontPage/bb95645193185.56021a64b99a9.jpg"), url("../assets/image/frontPage/14196a5193184.56021a6441152.jpg");
+    background-position: 0px 2250px, 0px 1650px, 0px 1050px, 0px 450px, 0px -150px;
+    background-repeat: no-repeat;
+    -webkit-filter: grayscale(100%) brightness(60%);
+    filter: grayscale(100%) brightness(60%);
+    visibility: hidden;
+}
+
+.heiIntro {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
 }
 
 .title-intro {
@@ -100,7 +98,7 @@ body {
 
 .title-intro-second {
     font-family: HelveticaNeueLTCom-Ex;
-    font-size: 100px;
+    font-size: 40px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -122,6 +120,10 @@ body {
     color: #000000;
 }
 
+.hide-scroll {
+    display: none;
+}
+
 .positionUp {
     width: 100%;
     text-align: center;
@@ -138,10 +140,10 @@ body {
 .description {
     font-family: HelveticaNeueLTCom-Ex;
     font-size: 25px;
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.37;
+    line-height: 1.1;
     text-align: left;
     letter-spacing: normal;
     color: #ffffff;
@@ -186,7 +188,7 @@ body {
     color: #ffffff;
     cursor: pointer;
     margin-right: 44px;
-    z-index: 10;
+    z-index: 30;
 }
 
 .menu-option {
@@ -194,6 +196,18 @@ body {
     font-family: HelveticaNeueLTCom-Lt;
     font-size: 25px;
     font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.clients-content {
+    font-family: HelveticaNeueLTCom-Ex;
+    font-size: 25px;
+    font-weight: lighter;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -282,6 +296,17 @@ body {
     color: #000000;
 }
 
+.h1F {
+    font-family: HelveticaNeueLTCom-Ex;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #000000;
+}
+
 .h2 {
     font-family: HelveticaNeueLTCom-Ex;
     font-size: 14px;
@@ -293,20 +318,16 @@ body {
     color: #000000;
 }
 
-.menu-position-left-recog {
-    position: absolute;
-    margin-left: 45px;
-    left: 0px;
-    top: 100px;
-    text-align: left
+.pad-reco-left {
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-top: 55px;
 }
 
-.menu-position-rigth-recog {
-    position: absolute;
-    margin-left: 45px;
-    left: 0px;
-    top: 875px;
-    text-align: left;
+.pad-reco-rigth {
+    padding-top: 0px;
+    padding-left: 16%;
+    padding-right: 16%;
 }
 
 /* Galaxy s5 */
@@ -329,6 +350,9 @@ body {
     .menu {
         margin-right: 58px;
     }
+    .pad-reco-left {
+        padding-right: 18%;
+    }
 }
 
 /* Iphone 6 */
@@ -350,6 +374,9 @@ body {
     }
     .menu {
         margin-right: 66px;
+    }
+    .pad-reco-left {
+        padding-right: 19%;
     }
 }
 
@@ -402,9 +429,12 @@ body {
     .menu-option {
         font-size: 40px;
     }
+    .clients-content {
+        font-size: 40px;
+    }
     .menu-position-rigth-clientes {
         position: absolute;
-        top: 825px;
+        top: 875px;
         left: 75px;
         text-align: left;
     }
@@ -421,6 +451,22 @@ body {
         margin-right: 80px;
         width: 15px;
         height: 16px;
+    }
+    .listOne {
+        width: 31%;
+        margin-left: 0%;
+        margin-right: 2%;
+    }
+    .listTwo {
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .listThree {
+        visibility: visible;
+        width: 31%;
+        margin-left: 2%;
+        margin-right: 0%
     }
 }
 
@@ -448,6 +494,9 @@ body {
         margin-right: 58px;
     }
     .menu-option {
+        font-size: 50px;
+    }
+    .clients-content {
         font-size: 50px;
     }
     .item-selected {
@@ -491,22 +540,43 @@ body {
     .h1 {
         font-size: 50px;
     }
+    .h1F {
+        font-size: 42px;
+    }
     .h2 {
         font-size: 25px;
     }
     .menu-position-left-recog {
         position: absolute;
-        margin-left: 100px;
-        left: 0px;
         top: 100px;
         text-align: left
     }
-    .menu-position-rigth-recog {
-        position: absolute;
-        margin-left: 100px;
-        right: 0px;
-        top: 1500px;
-        text-align: left
+    .listOne {
+        width: 31%;
+        margin-left: 0%;
+        margin-right: 2%;
+    }
+    .listTwo {
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .listThree {
+        visibility: visible;
+        width: 31%;
+        margin-left: 2%;
+        margin-right: 0%
+    }
+    .pad-reco-left {
+        padding-left: 12%;
+        padding-right: 5%;
+        padding-top: 90px;
+    }
+    .pad-reco-rigth {
+        text-align: right;
+        padding-top: 90px;
+        padding-left: 0%;
+        padding-right: 5%;
     }
 }
 
@@ -534,6 +604,9 @@ body {
         display: block;
     }
     .menu-option {
+        font-size: 50px;
+    }
+    .clients-content {
         font-size: 50px;
     }
     .item-selected {
@@ -586,52 +659,59 @@ body {
     .h1 {
         font-size: 50px;
     }
+    .h1F {
+        font-size: 42px;
+    }
     .h2 {
         font-size: 25px;
     }
-    .menu-position-left-recog {
-        position: absolute;
-        margin-left: 200px;
-        left: 0px;
-        top: 30%;
-        text-align: left
+    .pad-reco-left {
+        padding-left: 16%;
+        padding-top: 350px;
     }
-    .menu-position-rigth-recog {
-        position: fixed;
-        margin-right: 170px;
-        right: 0px;
-        top: 40%;
-        text-align: right
+    .pad-reco-rigth {
+        text-align: right;
+        padding-top: 350px;
+        padding-right: 170px;
     }
     .listOne {
         visibility: visible;
-        width: 14%;
-        margin-left: 3%;
-        margin-right: 3%
-    }
-    .listOneX2 {
-        visibility: visible;
-        width: 14%;
-        margin-left: 3%;
-        margin-right: 3%
+        width: 18%;
+        margin-left: 0%;
+        margin-right: 2%;
     }
     .listTwo {
         visibility: visible;
-        width: 14%;
-        margin-left: 3%;
-        margin-right: 3%
-    }
-    .listTwoX2 {
-        visibility: visible;
-        width: 14%;
-        margin-left: 3%;
-        margin-right: 3%
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
     .listThree {
         visibility: visible;
-        width: 14%;
-        margin-left: 3%;
-        margin-right: 3%
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%
+    }
+    .listFour {
+        visibility: visible;
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%
+    }
+    .listFive {
+        visibility: visible;
+        width: 18%;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    .heiIntro {
+        margin-top: 1%
+    }
+    .title-intro-second {
+        font-size: 100px;
+    }
+    .hide-scroll {
+        display: block;
     }
 }
 

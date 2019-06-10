@@ -1,17 +1,17 @@
-<div *ngIf="!showIntro" style="text-align: center; padding-top: 24%">
+<div *ngIf="!showIntro" class="d-flex justify-content-center heiIntro">
   <div *ngIf="!contentIntro">
-    <div class="animatedX1 fadeInDown title-intro">
+    <div class="animatedX3 fadeInDown title-intro">
       PARANOIDME
     </div>
-    <div class="animatedX1 fadeInUp description-intro">
+    <div class="animatedX3 fadeInUp description-intro">
       Diego L. Rodriguez
     </div>
   </div>
   <div *ngIf="contentIntro">
-    <div class="animatedX1 fadeInUp_A title-intro">
+    <div class="animatedX3 fadeInUp_A title-intro">
       PARANOIDME
     </div>
-    <div class="animatedX1 fadeInDown_A description-intro">
+    <div class="animatedX3 fadeInDown_A description-intro">
       Diego L. Rodriguez
     </div>
   </div>
@@ -63,96 +63,93 @@
     </div>
   </ng-template>
   <ng-template [ngIf]="menuSelected[2] && state == 'menu'">
-    <div class="menu-position-left-recog">
-      <div class="animatedX3 fadeInUp">
-        <div class="h1">
-          Adobe Guest Speaker
-        </div>
-        <div class="h2">
-          (Procesos Creativos 2017)
-        </div>
-        <br>
-        <div class="h1">
-          Adobe Illustrator CC 2015
-        </div>
-        <div class="h2">
-          (Start Screen Global Campaign)
-        </div>
-        <br>
-        <div class="h1">
-          Cannes 2013 Awards
-        </div>
-        <div class="h2">
-          (For Konami / Enter The Game Campaign)
-        </div>
-        <br>
-        <div class="h1">
-          Promax/BDA 2011 Awards
-        </div>
-        <div class="h2">
-          (For MVS TV / Cinturon de oro Campaign)
-        </div>
-        <br>
-        <div class="h1">
-          OFFF Festival 2011
-        </div>
-        <div class="h2">
-          (Speaker with Slashtree Collective)
-        </div>
-        <br>
-        <div class="h1">
-          Not There Exhibition
-        </div>
-        <div class="h2">
-          (Fu art gallery, Miami U.S)
-        </div>
-        <br>
-        <div class="h1">
-          House of Vans London
-        </div>
-        <div class="h2">
-          (TMNT Exhibition)
-        </div>
-        <br>
-        <div class="h1">
-          House of Vans London
-        </div>
-        <div class="h2">
-          (FESTIFEEL 2015)
-        </div>
-        <br>
-        <br>
-      </div>
-    </div>
-    <div class="menu-position-rigth-recog">
-      <div class="animatedX4 fadeInUp">
-        <div class="h1">
-          Featured Work
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12">
+        <div class="animatedX4 fadeInUp pad-reco-left">
+          <div class="h1">
+            Adobe Guest Speaker
+          </div>
+          <div class="h2">
+            (Procesos Creativos 2017)
+          </div>
+          <br>
+          <div class="h1">
+            Adobe Illustrator CC 2015
+          </div>
+          <div class="h2">
+            (Start Screen Global Campaign)
+          </div>
+          <br>
+          <div class="h1">
+            Cannes 2013 Awards
+          </div>
+          <div class="h2">
+            (For Konami / Enter The Game Campaign)
+          </div>
+          <br>
+          <div class="h1">
+            Promax/BDA 2011 Awards
+          </div>
+          <div class="h2">
+            (For MVS TV / Cinturon de oro Campaign)
+          </div>
+          <br>
+          <div class="h1">
+            OFFF Festival 2011
+          </div>
+          <div class="h2">
+            (Speaker with Slashtree Collective)
+          </div>
+          <br>
+          <div class="h1">
+            Not There Exhibition
+          </div>
+          <div class="h2">
+            (Fu art gallery, Miami U.S)
+          </div>
+          <br>
+          <div class="h1">
+            House of Vans London
+          </div>
+          <div class="h2">
+            (TMNT Exhibition)
+          </div>
+          <br>
+          <div class="h1">
+            House of Vans London
+          </div>
+          <div class="h2">
+            (FESTIFEEL 2015)
+          </div>
+          <br>
+          <br>
         </div>
       </div>
-      <br>
-      <div class="animatedX5 fadeInUp">
-        <div class="h2">
-          Behance
-          <br>
-          Advanced Photoshop uk
-          <br>
-          Juxtapox Magazine
-          <br>
-          Computer Arts uk
-          <br>
-          Abduzeedo’s
-          <br>
-          S:Best of Spanish Artist
-          <br>
-          <br>
-          <br>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="animatedX4 fadeInUp pad-reco-rigth">
+          <div class="h1F">
+            Featured Work
+          </div>
+          <div class="h2">
+            Behance
+            <br>
+            Advanced Photoshop uk
+            <br>
+            Juxtapox Magazine
+            <br>
+            Computer Arts uk
+            <br>
+            Abduzeedo’s
+            <br>
+            S:Best of Spanish Artist
+            <br>
+          </div>
         </div>
       </div>
     </div>
   </ng-template>
   <ng-template [ngIf]="menuSelected[3] && state == 'menu'">
-    <div class="menu-position-left-clients menu-option">
+    <div class="menu-position-left-clients clients-content">
       <div class="animatedX3 fadeInUp">
         Adobe
         <br>
@@ -182,6 +179,9 @@
         <br>
         MVS TV
         <br>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
     <div class="menu-position-rigth-clientes menu-description">
@@ -210,33 +210,32 @@
       </div>
       <div class="animatedX6 fadeInDown listTwo" style="height: 2500px;">
       </div>
-      <div class="animatedX6 fadeInDown listThree"
-        style="height: 2500px;">
+      <div class="animatedX6 fadeInDown listThree" style="height: 2500px;">
       </div>
-      <div class="animatedX6 fadeInDown listTwoX2" style="height: 2500px;">
+      <div class="animatedX6 fadeInDown listFour" style="height: 2500px;">
       </div>
-      <div class="animatedX6 fadeInDown listOneX2" style="height: 2500px;">
+      <div class="animatedX6 fadeInDown listFive" style="height: 2500px;">
       </div>
     </div>
-    <div class="description animatedX3 fadeInDown" *ngIf="!showSecondIntro">
-      <div class="name-intro-second">
+    <div class="heiIntro animatedX3 fadeInDown" *ngIf="!showSecondIntro">
+      <div class="name-intro-second d-flex justify-content-center">
         Diego L. Rodríguez
       </div>
-      <div class="title-intro-second">
+      <div class="title-intro-second d-flex justify-content-center">
         Paranoidme
       </div>
-      <div class="name-intro-second">
+      <div class="name-intro-second d-flex justify-content-center">
         Multidisciplinary artist & illustrator
         <br>
         based in Madrid, Spain.
       </div>
     </div>
     <div class="description animatedX3 fadeInUp" *ngIf="!showSecondIntro">
-      <div class="name-intro-second" style="margin-top: 24%; margin-bottom: 30px; cursor: pointer;">
+      <div class="name-intro-second hide-scroll" style="margin-top: 24%; margin-bottom: 30px; cursor: pointer;">
         Scroll
       </div>
     </div>
-    <div class="description animatedX3 fadeInUp_A" *ngIf="showSecondIntro">
+    <div class="heiIntro animatedX3 fadeInUp_A" *ngIf="showSecondIntro">
       <div class="name-intro-second">
         Diego L. Rodríguez
       </div>
@@ -251,9 +250,9 @@
     </div>
     <div class="animatedX5 zoomIn">
       <div class="description animatedX3 fadeInUp_A" *ngIf="showSecondIntro">
-        <div class="name-intro-second" style="margin-top: 24%; margin-bottom: 30px; cursor: pointer;">
-            Scroll
-          </div>
+        <div class="name-intro-second hide-scroll" style="margin-top: 24%; margin-bottom: 30px; cursor: pointer;">
+          Scroll
+        </div>
       </div>
     </div>
   </ng-template>

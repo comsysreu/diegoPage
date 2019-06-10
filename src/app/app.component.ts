@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   state: string = 'menu';
   menuSelected: any = [false, false, false, false, true];
   showIntro: boolean = false;
@@ -18,16 +17,23 @@ export class AppComponent {
 
     setTimeout(() => {
       this.contentIntro = true
-    }, 1000)
+    }, 3000);
 
     setTimeout(() => {
       this.showIntro = true;
       document.body.style.backgroundColor = "#949494";
-    }, 2000)
+    }, 6000);
 
-    setTimeout(() => {
+    window.onscroll = () => {
       this.showSecondIntro = true;
-    }, 8000)
+      var scrollHeight, totalHeight;
+      scrollHeight = document.body.scrollHeight;
+      totalHeight = window.scrollY + window.innerHeight;
+
+      if (totalHeight + 1 >= scrollHeight && this.menuSelected[4]) {
+        window.scroll(0, 0);
+      }
+    }
   }
 
   changeMenu(value: string) {
@@ -37,13 +43,13 @@ export class AppComponent {
 
   changeSelectedMenu(position: number) {
     if (position == 1) {
-      this.menuSelected = [true, false, false, false];
+      this.menuSelected = [true, false, false, false, false];
     } else if (position == 2) {
-      this.menuSelected = [false, true, false, false];
+      this.menuSelected = [false, true, false, false, false];
     } else if (position == 3) {
-      this.menuSelected = [false, false, true, false];
+      this.menuSelected = [false, false, true, false, false];
     } else if (position == 4) {
-      this.menuSelected = [false, false, false, true];
+      this.menuSelected = [false, false, false, true, false];
     }
     this.state = 'menu';
     this.changeBackgroundColor();
@@ -56,4 +62,6 @@ export class AppComponent {
       document.body.style.backgroundColor = "#bfbfbf";
     }
   }
+
+
 }
